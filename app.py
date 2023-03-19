@@ -18,7 +18,7 @@ def sa():
     return render_template('index_origin.html')
 
 
-@app.route('/results.html', methods=['POST'])
+@app.route('/results.html', methods=['GET'])
 def index_post():
     translator = googletrans.Translator()
 
