@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>With Law</title>
+		<meta name="description" content="Tab Styles Inspiration: A small collection of styles for tabs" />
+		<meta name="keywords" content="tabs, inspiration, web design, css, modern, effects, svg" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="static/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/tabs.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/tabstyles.css" />
+  		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<svg class="hidden">
+			<defs>
+				<path id="tabshape" d="M80,60C34,53.5,64.417,0,0,0v60H80z"/>
+			</defs>
+		</svg>
+		<div class="container">
+			<!-- Top Navigation -->
+			
+			<header class="codrops-header">
+				<h1>법을 사례로 배우다. <span>판례로 배우는 법률.</span></h1>
+				<p class="support">Your browser does not support <strong>flexbox</strong>! <br />Please view this demo with a <strong>modern browser</strong>.</p>
+			</header>
+			<section>
+				<div class="tabs tabs-style-bar">
+					<nav>
+						<ul>
+							<li><a href="results.html" ><span>판례 검색</span></a></li>
+							<li><a href="results copy.html" ><span>전국법원 주요판결</span></a></li>
+						</ul>
+					</nav>
+					
+			<!-- Related demos -->
+			<section class="related">
+				<body>
+					<div>
+						<a href="/"><img src="static/img/relatedposts/law logo.png"  width="25%"></a>
+					</div>
+				</body>
+			</section>
+		</div><!-- /container -->
+		<script src="js/cbpFWTabs.js"></script>
+		<script>
+			(function() {
+
+				[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+					new CBPFWTabs( el );
+				});
+
+			})();
+		</script>
+	</body>
+</html>

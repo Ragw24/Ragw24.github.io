@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>With Law</title>
+		<meta name="description" content="Tab Styles Inspiration: A small collection of styles for tabs" />
+		<meta name="keywords" content="tabs, inspiration, web design, css, modern, effects, svg" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="static/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/tabs.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/tabstyles.css" />
+  		<script src="static/js/modernizr.custom.js"></script>
+	</head>
+	<body>
+        <body style="
+        padding-left: 225px;
+    ">
+		<svg class="hidden">
+			<defs>
+				<path id="tabshape" d="M80,60C34,53.5,64.417,0,0,0v60H80z"/>
+			</defs>
+		</svg>
+		<div class="container">
+			<section class="related">
+                <section class="related" style="
+    padding-right: 300px;
+">
+				<body>
+
+					<div>
+						<a href="/"><img src="static/img/relatedposts/law logo.png"  width="25%"style="width: 400px;"></a>
+					</div>
+				</body>
+				
+			</section>
+
+				</a>
+			</section>
+		</div><!-- /container -->
+		<script src="static/js/cbpFWTabs.js"></script>
+		<script>
+			(function() {
+
+				[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+					new CBPFWTabs( el );
+				});
+
+			})();
+		</script>
+	</body>
+	<div> 
+			<div class="form-group">
+				<textarea name="text" id="mytext" cols="176" rows="10" class="form-control"></textarea>
+			</div>
+			
+		<button onclick="doAction1()"><span>전체재판 판례 검색</span>
+		</button>       
+			<script>
+				function doAction1() {
+					const element = document.querySelector('#mytext');
+					const x = element.value;     
+					location.href='https://casenote.kr/search/?q='+x;
+				};
+				</script>
+
+		<button onclick="doAction2()"><span>형사재판 판례 검색</span>
+		</button>       
+			<script>
+				function doAction2() {
+					const element = document.querySelector('#mytext');
+					const x = element.value;     
+					location.href='https://casenote.kr/search/?q='+x+'&exclusion=&sort=0&period=0&case=1&oc=0';
+				};
+				</script>
+
+		<button onclick="doAction3()"><span>민사재판 판례 검색</span>
+		</button>       
+			<script>
+				function doAction3() {
+					const element = document.querySelector('#mytext');
+					const x = element.value;     
+					location.href='https://casenote.kr/search/?q='+x+'&exclusion=&sort=0&period=0&case=0&oc=0';
+				};
+				</script>
+				
+		<button onclick="doAction4()"><span>가사재판 판례 검색</span>
+		</button>       
+			<script>
+				function doAction4() {
+					const element = document.querySelector('#mytext');
+					const x = element.value;     
+					location.href='https://casenote.kr/search/?q='+x+'&exclusion=&sort=0&period=0&case=4&oc=0';
+				};
+				</script>
+				
+		<button onclick="doAction5()"><span>행정재판 판례 검색</span>
+		</button>       
+			<script>
+				function doAction5() {
+					const element = document.querySelector('#mytext');
+					const x = element.value;     
+					location.href='https://casenote.kr/search/?q='+x+'&exclusion=&sort=0&period=0&case=2&oc=0';
+				};
+				</script> 
+</div>
+</body>
+</html>
